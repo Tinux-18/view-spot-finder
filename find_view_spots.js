@@ -36,12 +36,10 @@ function findViewSpots() {
         }
     });
 
-    viewSpots
-        .sort((a, b) => {
-            return b.value - a.value;
-        })
-        .slice(0, viewSpotNumber);
-    console.log("viewSpots :>> ", viewSpots);
+    viewSpots.sort((a, b) => {
+        return b.value - a.value;
+    });
+    console.log("viewSpots :>> ", viewSpots.slice(0, viewSpotNumber));
 }
 
 findViewSpots();
