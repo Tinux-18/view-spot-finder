@@ -2,6 +2,8 @@
 
 ## Overview
 
-View Spot Finder (VSF) is a simple Javascript application returning a list of view points from a mesh.
+View Spot Finder (VSF) is a simple Javascript application returning a
+list of view points from a mesh.
 
-To fully understand the assignment check: 
+To fully understand the assignment check:
+https://github.com/Tinux-18/view-spot-finder/blob/master/Assignment.pdf
