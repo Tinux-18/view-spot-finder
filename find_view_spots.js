@@ -32,18 +32,16 @@ function findViewSpots() {
                 e => e.value > target.value
             ).length === 0
         ) {
-            viewSpots.push(target);
+            viewSpots.push({ id: target.id, value: target.value });
         }
     });
 
-    viewSpots.map(viewSpot => {
-        delete viewSpot.nodes;
-    });
-
-    viewSpots.sort((a, b) => {
-        return a.value - b.value;
-    });
-    console.log(viewSpots.reverse().slice(0, viewSpotNumber));
+    viewSpots
+        .sort((a, b) => {
+            return b.value - a.value;
+        })
+        .slice(0, viewSpotNumber);
+    console.log("viewSpots :>> ", viewSpots);
 }
 
 findViewSpots();
