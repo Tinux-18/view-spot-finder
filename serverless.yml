@@ -2,12 +2,12 @@ org: tinux
 app: view-spot-finder
 service: view-spot-finder
 
-frameworkVersion: '3'
+frameworkVersion: "3"
 
 provider:
-  name: aws
-  runtime: nodejs14.x
+    name: aws
+    runtime: nodejs14.x
 
 functions:
-  hello:
-    handler: handler.hello
+    getViewSpots:
+        handler: src/handler.getViewSpots
