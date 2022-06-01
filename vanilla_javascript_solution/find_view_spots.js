@@ -1,11 +1,8 @@
-console.time("findViewSpots");
+// Load data and parameters
 
 const viewSpotNumber = process.argv.slice(2)[1];
 const elements = require(process.argv.slice(2)[0]).elements;
 const values = require(process.argv.slice(2)[0]).values;
-
-console.log("loaded constants");
-console.timeLog("findViewSpots");
 
 function findViewSpots() {
     let viewSpots = [];
@@ -50,5 +47,3 @@ function findViewSpots() {
 }
 
 console.log(findViewSpots());
-
-console.timeEnd("findViewSpots");
