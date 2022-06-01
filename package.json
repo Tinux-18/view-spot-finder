@@ -1,0 +1,25 @@
+{
+  "name": "view-spot-finder",
+  "version": "1.0.0",
+  "description": "## Overview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tinux-18/view-spot-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tinux-18/view-spot-finder/issues"
+  },
+  "homepage": "https://github.com/Tinux-18/view-spot-finder#readme",
+  "dependencies": {
+    "ajv": "^8.11.0",
+    "aws-sdk": "^2.1145.0",
+    "uuid": "^8.3.2"
+  }
+}

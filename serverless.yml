@@ -10,4 +10,22 @@ provider:
 
 functions:
     getViewSpots:
-        handler: src/handler.getViewSpots
+        handler: src/functions/view_spots_finder.handler
+        events:
+            - http:
+                  path: /
+                  method: get
+
+resources:
+    Resources:
+        MeshTable:
+            Type: AWS::DynamoDB::Table
+            Properties:
+                TableName: Mesh
+                BillingMode: PAY_PER_REQUEST
+                AttributeDefinitions:
+                    - AttributeName: id
+                      AttributeType: S
+                KeySchema:
+                    - AttributeName: id
+                      KeyType: HASH
