@@ -7,14 +7,21 @@ frameworkVersion: "3"
 provider:
     name: aws
     runtime: nodejs14.x
+    # update this as per iam guide at: https://www.serverless.com/framework/docs/providers/aws/guide/iam
+    iamRoleStatements:
+        - Effect: Allow
+          Action:
+              - dynamodb:*
+          Resource:
+              - arn:aws:dynamodb:us-east-1:222256869848:table/Mesh
 
 functions:
-    getViewSpots:
-        handler: src/functions/view_spots_finder.handler
+    addElements:
+        handler: src/functions/addElements.handler
         events:
             - http:
                   path: /
-                  method: get
+                  method: post
 
 resources:
     Resources:
