@@ -7,7 +7,7 @@
 - [x] Build basic solution in JS
 - [x] Set-up DynamoDB to store mesh
 - [ ] Insert Json data into DB
-- [ ] Querz DB to get view points
+- [ ] Query DB to get view points
 
 ## Overview
 
